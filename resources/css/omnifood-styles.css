@@ -1,9 +1,9 @@
 /*
-orange color #e67e22
+orange color: #e67e22;
 */
 
 /*-----------------------------------------*/
-/*Basic setup*/
+/*          Basic setup                    */
 /*-----------------------------------------*/
 * {
     margin: 0;
@@ -27,7 +27,7 @@ html {
     visibility: hidden;
 }
 /*-----------------------------------------*/
-/*Reusuable Components*/
+/*       Reusuable Components              */
 /*-----------------------------------------*/
 .row {
     max-width: 1140px;
@@ -106,7 +106,8 @@ h2:after{
 
 /*------------Buttons--------------------*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -115,7 +116,8 @@ h2:after{
     transition: background-color 0.2s,border 0.2s,color 0.2s;
 }
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit]{
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -127,11 +129,14 @@ h2:after{
     color: #e67e22;
 }
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     background-color: #b05d14;
 }
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type=submit]{
     border: 1px solid #cf6d17;
 }
 .btn-ghost:hover,
@@ -141,13 +146,14 @@ h2:after{
 }
 
 /*-----------------------------------------*/
-/*Header*/
+/*               Header                    */
 /*-----------------------------------------*/
 header {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
   }
 
 .hero-text-box {
@@ -164,7 +170,7 @@ header {
     margin-top: 20px;
 }
 /*-----------------------------------------*/
-/*Main Nav/
+/*                Main Nav
 /*-----------------------------------------*/
 .phone {
     /*position: relative;*/
@@ -205,15 +211,15 @@ header {
     border-bottom: 2px solid #e67e22;
     
 }
-/*-------------------*/
-/*Features
-/*-------------------*/
+/*-----------------------------------------*/
+/*              Features
+/*-----------------------------------------*/
 .section-features .long-copy {
     margin-bottom: 30px;
 }
-/*-------------------*/
-/*Meals
-/*------------------*/
+/*-----------------------------------------*/
+/*               Meals
+/*-----------------------------------------*/
 .section-meals{
     padding: 0;
 }
@@ -243,9 +249,9 @@ header {
     opacity: 1;
     transform: scale(1.03);
 }
-/*-------------------*/
-/*How it works
-/*------------------*/
+/*-----------------------------------------*/
+/*            How it works
+/*-----------------------------------------*/
 .section-steps {
     background-color: #f4f4f4;
 }
@@ -286,9 +292,9 @@ header {
     width: auto;
     margin-right: 10px;
 }
-/*-------------------*/
-/*Cities
-/*------------------*/
+/*-----------------------------------------*/
+/*                 Cities
+/*-----------------------------------------*/
 .box img {
   width: 100%;
   height: auto;
@@ -297,9 +303,9 @@ header {
 .city-feature {
   margin-bottom: 5px;
 }
-/*-------------------*/
-/*Testimonials
-/*------------------*/
+/*-----------------------------------------*/
+/*              Testimonials
+/*-----------------------------------------*/
 .section-testimonials {
   background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/back-customers.jpg);
   background-size: cover;
@@ -333,9 +339,9 @@ cite img {
   margin-right: 10px;
   vertical-align: middle;
 }
-/*-------------------*/
-/* Section Plans
-/*------------------*/
+/*-----------------------------------------*/
+/*             Section Plans
+/*-----------------------------------------*/
 .section-plans{
   background-color:#f4f4f4 ;
 }
@@ -379,3 +385,26 @@ cite img {
 .plan-box ul li {
   padding: 5px 0;
 }
+/*-----------------------------------------*/
+/*             Contact Form
+/*-----------------------------------------*/
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+textarea {
+  height: 100px;
+}
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+/**:focus{outline: none};*/
