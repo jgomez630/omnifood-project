@@ -81,7 +81,7 @@ h2:after{
     margin-left: 15%;
 }
 .box p {
-    font-size: 85%;
+    font-size: 85%
     line-height: 145%
 }
 /*------------Icons-----------------*/
@@ -103,7 +103,20 @@ h2:after{
   vertical-align: middle;
   margin-top: -5px;
 }
-
+/*------------Links--------------------*/
+a:link,
+a:visited{
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+a:hover,
+a:active{
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
 /*------------Buttons--------------------*/
 .btn:link,
 .btn:visited,
@@ -408,3 +421,70 @@ input[type=checkbox] {
   margin: 10px 5px 10px 0;
 }
 /**:focus{outline: none};*/
+/*-----------------------------------------*/
+/*           Footer
+/*-----------------------------------------*/
+footer {
+  background-color: #333;
+  padding: 40px;
+  font-size: 80%;
+}
+.footer-nav{
+  list-style-type: none;
+  float: left;
+}
+.social-links{
+  list-style-type: none;
+  float: right;
+}
+.footer-nav li,.social-links li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-nav li:lastchild,
+.social-links li:lastchild {
+  margin: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  transition: color 0.2s;
+  }
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active {
+ color: #ddd; 
+}
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 180%;
+}
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram{
+  transition: color 0.2s;
+}
+
+.ion-social-facebook:hover{
+  color: #3b5998;
+}
+.ion-social-twitter:hover{
+  color: #55acee;
+}
+.ion-social-googleplus:hover{
+  color: #dd4b39;
+}
+.ion-social-instagram:hover{
+  color: #125688;
+}
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 30px;
+}
