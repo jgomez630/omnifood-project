@@ -10,13 +10,14 @@ orange color: #e67e22;
     padding: 0;
     box-sizing: border-box;
 }
-html {
+html,body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato','Arial',sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 .clearfix {zoom:1}
 .clearfix:after {
@@ -182,6 +183,13 @@ header {
     float: left;
     margin-top: 20px;
 }
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
 /*-----------------------------------------*/
 /*                Main Nav
 /*-----------------------------------------*/
@@ -191,7 +199,6 @@ header {
     float: right;
     color: #fff;  
     margin-top: 45px;
-      
 }
 .phone p {
   margin-bottom: 5px;
@@ -200,8 +207,9 @@ header {
 .phone p:first-of-type{
   letter-spacing: 3px;
 }
+/*   Main Nav    */
 .main-nav {
-    float: left;
+    float: right;
     list-style-type: none;
     margin-top: 60px;
 }
@@ -222,8 +230,26 @@ header {
 .main-nav a:hover,
 .main-nav a:active {
     border-bottom: 2px solid #e67e22;
-    
 }
+/*           Sticky Nav       */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,0.98);
+  box-shadow: 0 2px 2px #efefef;
+}
+.main-nav {margin-top: 18px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+.sticky .logo {display: none;}
+.sticky .logo-black{display: block;}
+ 
 /*-----------------------------------------*/
 /*              Features
 /*-----------------------------------------*/
@@ -462,7 +488,7 @@ footer {
 }
 .social-links li a:link,
 .social-links li a:visited {
-  font-size: 180%;
+  font-size: 160%;
 }
 .ion-social-facebook,
 .ion-social-twitter,
@@ -486,5 +512,5 @@ footer {
 footer p {
   color: #888;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }

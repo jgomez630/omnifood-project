@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width",initial-scale=1.0>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
   <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
   <link rel="stylesheet" type="text/css" href="resources/css/omnifood-styles.css">
+  <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=lato:100,300,400,300italic">
 
   <title>OmniFoods</title>
@@ -21,17 +23,17 @@
     <nav>
       <div class="row">
         <img src="resources/img/logo-white.png" alt="omnifood-logo" class="logo">
+        <img src="resources/img/logo.png" alt="omnifood-logo" class="logo-black">
         <ul class="main-nav">
           <li><a href="#">Food delivery</a></li>
           <li><a href="#">How it works</a></li>
           <li><a href="#">Our cities</a></li>
           <li><a href="#">Sign up</a></li>
         </ul>
-        <div class="phone">
+        <!--<div class="phone">
           <p>Phone Number</p>
           <p>818.777.7777</p>
-
-        </div>
+        </div>-->
       </div>
 
     </nav>
@@ -45,7 +47,7 @@
   <!--===============================-->
   <!--       FEATURES SECTION        -->
   <!--===============================-->
-  <section class="section-features">
+  <section class="section-features js--section-features">
     <div class="row">
       <h2>Get food fast &mdash; not fast food.</h2>
       <p class="long-copy">
@@ -284,7 +286,7 @@
       <div>
           <h3>Premium</h3>
           <p class="plan-price">$399<span>/month</span></p>
-          <p class="plan-price-meal">That’s only 13.30$ per meal</p>
+          <p class="plan-price-meal">That’s only $.13 per meal</p>
         </div>
         <div>
           <ul>
@@ -304,7 +306,7 @@
         <div>
           <h3>Pro</h3>
           <p class="plan-price">$149<span>/month</span></p>
-          <p class="plan-price-meal">That’s only 14.90$ per meal</p>
+          <p class="plan-price-meal">That’s only $.14 per meal</p>
         </div>
         <div>
           <ul>
@@ -323,7 +325,7 @@
       <div class="plan-box">
         <div>
           <h3>Starter</h3>
-          <p class="plan-price">19cents <span>per meal</span></p>
+          <p class="plan-price">$.19 <span>per meal</span></p>
           <p class="plan-price-meal">&nbsp;</p>
         </div>
         <div>
@@ -440,6 +442,12 @@
       </p>
     </div>
   </footer>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    <script src="vendors/js/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script_omnifoods.js"></script>
   </body>
-
 </html>
