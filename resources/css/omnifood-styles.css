@@ -1,7 +1,11 @@
 /*
 orange color: #e67e22;
-*/
-
+.recording-now {
+  width:440px;
+  height:200px;
+  background: #ffffff url(images/prependers-recording.jpg) top left no-repeat;
+  outline:1px dotted;
+} */
 /*-----------------------------------------*/
 /*          Basic setup                    */
 /*-----------------------------------------*/
@@ -163,6 +167,7 @@ input[type=submit]{
 /*               Header                    */
 /*-----------------------------------------*/
 header {
+    background-color: #555555;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/hero.jpg);
     background-size: cover;
     background-position: center;
